@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/* Base styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Custom scrollbar - works on Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5c5c5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  textarea {
+    font-size: 16px; /* Prevents iOS zoom on focus */
+  }
+  
+  /* Fix for iOS input elements */
+  input, select, textarea {
+    font-size: 16px;
+  }
+  
+  /* Ensure content isn't hidden under mobile nav */
+  .pb-16 {
+    padding-bottom: 4rem !important;
+  }
+  
+  /* Improve touch targets */
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Fix text overflow in smaller screens */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Improve focus states for accessibility */
+:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Fix for mobile virtual keyboard pushing content */
+@media screen and (max-width: 768px) {
+  .fixed-mobile-height {
+    height: calc(100vh - 200px);
+    max-height: 100vh;
+  }
+}
