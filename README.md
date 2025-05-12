@@ -37,16 +37,7 @@ npm run dev
 
 💨 Tailwind CSS
 
-🎨 Lucide React Icons
-
-📁 Project Structure
-
-src/
-├── components/
-│   └── CollaborativeEditor.jsx  # Main editor component
-├── App.js                       # Root application component
-├── index.js                     # Entry point
-└── index.css                    # Global styles
+🎨 Lucide React Icons                  
 
 
 ## 🌐 Live Demo
