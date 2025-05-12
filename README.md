@@ -1,12 +1,77 @@
-# React + Vite
+Collaborative Text Editor
+A real-time browser-based collaborative text editor built with React that allows multiple users to edit documents simultaneously without requiring a backend server.
+Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Real-time document collaboration
+Word-level change tracking
+User presence and activity monitoring
+Detailed edit history
+Cross-browser and cross-device synchronization
+Responsive design for desktop and mobile
 
-Currently, two official plugins are available:
+Prerequisites
+Before running this project, make sure you have the following installed:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Node.js (v14.0.0 or higher)
+npm (v6.0.0 or higher) or yarn (v1.22.0 or higher)
 
-## Expanding the ESLint configuration
+Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clone the repository:
+
+bashgit clone https://github.com/yourusername/collaborative-text-editor.git
+cd collaborative-text-editor
+
+Install the dependencies:
+
+bashnpm install
+# or
+yarn install
+Running the Project
+
+Start the development server:
+
+bashnpm start
+# or
+yarn start
+
+Open your browser and navigate to:
+
+http://localhost:3000
+
+To test the collaborative features:
+
+Open the application in multiple browser tabs or different browsers
+Log in with different usernames in each tab/browser
+Start editing the document to see real-time changes
+
+
+
+How It Works
+The application uses browser storage APIs (localStorage and sessionStorage) to:
+
+Synchronize document content across multiple browsers
+Track active users and their editing activity
+Maintain edit history with detailed change information
+
+No server is required as all communication happens through localStorage events.
+Project Structure
+src/
+├── components/
+│   └── CollaborativeEditor.jsx  # Main editor component
+├── App.js                       # Root application component
+├── index.js                     # Entry point
+└── index.css                    # Global styles
+Technologies Used
+
+React (with Hooks)
+localStorage/sessionStorage APIs
+Tailwind CSS
+Lucide React Icons
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+Acknowledgments
+
+Built as part of a web development assignment
+Inspired by collaborative editing tools like Google Docs
