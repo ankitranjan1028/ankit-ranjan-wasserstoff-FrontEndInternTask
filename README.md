@@ -31,6 +31,7 @@ npm run dev
 
 
 🛠 Technologies Used
+
 ⚛️ React (with Hooks)
 
 🧠 localStorage / sessionStorage APIs
@@ -43,7 +44,7 @@ npm run dev
 ## 🌐 Live Demo
 
 Check out the deployed application here:  
-[🔗 Deployed Link](https://your-deployment-url.com)
+[🔗 Deployed Link](https://ankit-ranjan-wasserstoff-front-end-intern-task.vercel.app/)
 
 ## 📹 Demo Video
 
