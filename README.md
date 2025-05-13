@@ -49,5 +49,5 @@ Check out the deployed application here:
 ## 📹 Demo Video
 
 Watch a short demo of the collaborative editor in action:  
-[▶️ Demo Video](https://your-demo-video-link.com)
+[▶️ Demo Video](https://drive.google.com/file/d/1C2nsXe5kAjMHbflRPC-uz14BrHoTk5CR/view?usp=sharing)
 
